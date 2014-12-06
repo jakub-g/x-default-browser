@@ -1,0 +1,34 @@
+{
+  "name": "default-browser-winlin",
+  "version": "0.0.0",
+  "description": "Detect default web browser of the current user for Windows / Linux",
+  "author": "Jakub Gieryluk <jakub.g.opensource@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/jakub-g/default-browser-winlin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakub-g/default-browser-winlin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jakub-g/default-browser-winlin/issues"
+  },
+  "bin": "bin/default-browser.js",
+  "main": "index.js",
+  "scripts" : {
+    "lint": "jshint index.js lib bin",
+    "mocha": "mocha",
+    "test": "npm run lint && npm run mocha"
+  },
+  "keywords": [
+    "windows",
+    "ubuntu",
+    "linux",
+    "default",
+    "browser"
+  ],
+  "devDependencies": {
+    "jshint": "2.5.10",
+    "mocha": "2.0.1",
+    "rewire": "2.1.3"
+  }
+}
