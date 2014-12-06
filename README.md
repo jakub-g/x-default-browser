@@ -1,6 +1,8 @@
 # default-browser-winlin
  [![Build Status](https://secure.travis-ci.org/jakub-g/default-browser-winlin.png)](http://travis-ci.org/jakub-g/default-browser-winlin)
 
+ [![Get it on npm](https://nodei.co/npm/default-browser-winlin.png?compact=true)](https://www.npmjs.org/package/default-browser-winlin)
+
 
 This small module finds out the default browser for current user (Windows / Linux).
 
