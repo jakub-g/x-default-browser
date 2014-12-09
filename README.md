@@ -1,14 +1,13 @@
-# default-browser-winlin
- [![Build Status](https://secure.travis-ci.org/jakub-g/default-browser-winlin.png)](http://travis-ci.org/jakub-g/default-browser-winlin)
+# x-default-browser
+ [![Build Status](https://secure.travis-ci.org/jakub-g/x-default-browser.png)](http://travis-ci.org/jakub-g/x-default-browser)
 
- [![Get it on npm](https://nodei.co/npm/default-browser-winlin.png?compact=true)](https://www.npmjs.org/package/default-browser-winlin)
+ [![Get it on npm](https://nodei.co/npm/x-default-browser.png?compact=true)](https://www.npmjs.org/package/x-default-browser)
 
 
-This small module finds out the default browser for current user (Windows / Linux).
+This *cross-platform* module finds out the default browser for current user.
 
-Tested on Windows 7 64-bit, Windows XP 32-bit, Ubuntu 14.04 64-bit (en-US locale).
+Tested on Windows 7 64-bit, Windows XP 32-bit, Ubuntu 14.04 64-bit (en-US locale), Mac OS X.
 
-(For OS X, see [default-browser from Sindre Sorhus](https://github.com/sindresorhus/default-browser))
 
 It requires nodejs and npm. If you don't have node, grab it at [nodejs.org](https://nodejs.org).
 Node installer bundles npm (node package manager)
@@ -20,23 +19,25 @@ Node installer bundles npm (node package manager)
   * checks registry value `HKCU\Software\Clients\StartMenuInternet`
 * Linuxes:
   * reads the output of `xdg-mime query default x-scheme-handler/http`
+* OS X:
+  * delegated to [default-browser from Sindre Sorhus](https://github.com/sindresorhus/default-browser)
 
 
 ## Usage as a nodejs module
 
 ```sh
-$ npm install default-browser-winlin
+$ npm install x-default-browser
 ```
 
 ```js
-var defaultBrowser = require('default-browser-winlin');
+var defaultBrowser = require('x-default-browser');
 
 defaultBrowser(function (err, res) {
 
     // in case of error, `err` will be a string with error message; otherwise it's `null`.
 
     console.dir(res);
-	// => {
+    // => {
     //  isIE: false,
     //  isFirefox: true,
     //  isChrome: false,
@@ -49,24 +50,25 @@ defaultBrowser(function (err, res) {
 });
 ```
 
-* `commonName` is portable, it will be `ie`, `firefox`, `chrome`, `chromium`, `opera` or `unknown`
-* `isWebkit` is true for Chrome, Chromium, Opera
+* `commonName` is portable, it will be `ie`, `safari`, `firefox`, `chrome`, `chromium`, `opera` or `unknown`
+* `isBlink` is true for Chrome, Chromium, Opera
+* `isWebkit` is true for Chrome, Chromium, Opera, Safari
 * `identity` key is platform-specific.
   * On Windows, it's the prefix you can use for querying `HKLM\Software\Clients\StartMenuInternet\<prefix>`
     keys to find out details of the browser. It'll be one of `iexplore.exe`, `firefox.exe`, `google chrome`,
     `chromium.<somerandomkeyhere>`, `operastable`.
   * On Ubuntu, it will be `firefox.desktop`, `google-chrome.desktop`, `chromium-browser.desktop` or `opera.desktop`
-
+  * On MAC, it will be the bundle ID: `com.apple.Safari`, `com.google.chrome`, `com.operasoftware.Opera`, `org.mozilla.firefox` etc
 
 ## Usage from command line
 
 ```sh
-$ npm install -g default-browser-winlin
-$ default-browser-winlin
+$ npm install -g x-default-browser
+$ x-default-browser
 firefox
 ```
 
-Command line version outputs the `commonName` key, i.e.  `ie`, `firefox`, `chrome`, `chromium`, `opera` or `unknown`.
+Command line version outputs the `commonName` key, i.e.  `ie`, `safari`, `firefox`, `chrome`, `chromium`, `opera` or `unknown`.
 
 
 ## Linux support
