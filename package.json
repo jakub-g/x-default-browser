@@ -26,6 +26,9 @@
     "default",
     "browser"
   ],
+  "optionalDependencies": {
+    "default-browser": "1.0.0"
+  },
   "devDependencies": {
     "jshint": "2.5.10",
     "mocha": "2.0.1",
