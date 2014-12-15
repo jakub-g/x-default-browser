@@ -20,7 +20,7 @@ Node installer bundles npm (node package manager)
 * Linuxes:
   * reads the output of `xdg-mime query default x-scheme-handler/http`
 * OS X:
-  * delegated to [default-browser from Sindre Sorhus](https://github.com/sindresorhus/default-browser)
+  * delegated to [default-browser-id from Sindre Sorhus](https://github.com/sindresorhus/default-browser-id)
 
 
 ## Usage as a nodejs module
@@ -58,7 +58,7 @@ defaultBrowser(function (err, res) {
     keys to find out details of the browser. It'll be one of `iexplore.exe`, `firefox.exe`, `google chrome`,
     `chromium.<somerandomkeyhere>`, `operastable`.
   * On Ubuntu, it will be `firefox.desktop`, `google-chrome.desktop`, `chromium-browser.desktop` or `opera.desktop`
-  * On MAC, it will be the bundle ID: `com.apple.Safari`, `com.google.chrome`, `com.operasoftware.Opera`, `org.mozilla.firefox` etc
+  * On Mac OS X, it will be the bundle ID: `com.apple.Safari`, `com.google.chrome`, `com.operasoftware.Opera`, `org.mozilla.firefox` etc
 
 ## Usage from command line
 
@@ -84,7 +84,8 @@ MIT © [Jakub Gieryluk](http://jakub-g.github.io)
 
 ## Related projects
 
-*     [default-browser](https://github.com/sindresorhus/default-browser) (OS X)
+*   [default-browser-id](https://github.com/sindresorhus/default-browser-id) (OS X)
 * [win-detect-browsers](https://github.com/vweevers/win-detect-browsers) (Windows)
 *   [browser-launcher2](https://github.com/benderjs/browser-launcher2) (cross-platform)
 *              [opener](https://github.com/domenic/opener) (cross-platform)
+*           [node-open](https://github.com/pwnall/node-open) (cross-platform)
