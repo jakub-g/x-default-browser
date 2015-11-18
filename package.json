@@ -27,7 +27,7 @@
     "browser"
   ],
   "optionalDependencies": {
-    "default-browser-id": "1.0.2"
+    "default-browser-id": "1.0.4"
   },
   "devDependencies": {
     "jshint": "2.5.10",
