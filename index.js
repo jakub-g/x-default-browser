@@ -2,7 +2,7 @@ var detect;
 var os = require('os');
 
 if (os.platform() == 'win32') {
-    if (os.release().indexOf('10.') == 0)
+    if (os.release().indexOf('10.') === 0)
         detect = require('./lib/detect-windows10');
     else
         detect = require('./lib/detect-windows');
