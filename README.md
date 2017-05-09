@@ -6,7 +6,7 @@
 
 This *cross-platform* module finds out the default browser for current user.
 
-Tested on Windows 7 64-bit, Windows XP 32-bit, Ubuntu 14.04 64-bit (en-US locale), Mac OS X.
+Tested on Windows 10 64-bit, Windows 7 64-bit, Windows XP 32-bit, Ubuntu 14.04 64-bit (en-US locale), Mac OS X.
 
 
 It requires nodejs and npm. If you don't have node, grab it at [nodejs.org](https://nodejs.org).
@@ -79,13 +79,13 @@ Use GitHub issues or email: (jakub.g.opensource) (gmail)
 
 ## License
 
-MIT © [Jakub Gieryluk](http://jakub-g.github.io)
+MIT Â© [Jakub Gieryluk](http://jakub-g.github.io)
 
 
 ## Related projects
 
-*   [default-browser-id](https://github.com/sindresorhus/default-browser-id) (OS X)
+* [default-browser-id](https://github.com/sindresorhus/default-browser-id) (OS X)
 * [win-detect-browsers](https://github.com/vweevers/win-detect-browsers) (Windows)
-*   [browser-launcher2](https://github.com/benderjs/browser-launcher2) (cross-platform)
-*              [opener](https://github.com/domenic/opener) (cross-platform)
-*           [node-open](https://github.com/pwnall/node-open) (cross-platform)
+* [browser-launcher2](https://github.com/benderjs/browser-launcher2) (cross-platform)
+* [opener](https://github.com/domenic/opener) (cross-platform)
+* [node-open](https://github.com/pwnall/node-open) (cross-platform)
