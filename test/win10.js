@@ -84,7 +84,7 @@ describe("Windows 10 tests", function () {
     });
 
     it('detects edge', function (done) {
-        execResponse.stdout = '    ProgId    REG_SZ    AppXq0fevzme2pys62n3e0fbqa7peapykr8v\r\n';
+        execResponse.stdout = '    ProgId    REG_SZ    MSEdge.HTM\r\n';
 
         detect(function(err, res){
             assert.equal(res.isEdge, true);
