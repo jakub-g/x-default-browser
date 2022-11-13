@@ -6,7 +6,9 @@
 
 This _cross-platform_ module finds out the default browser for the current user.
 
-Tested on Windows 10 64-bit, Windows 7 64-bit, Windows XP 32-bit, Ubuntu 14.04 64-bit (en-US locale), Mac OS 12.6.
+Recent versions (~0.5.x) were tested locally on Windows 10 64-bit, Mac OS 12.6.
+
+Older versions (~0.4.x) were tested locally on Windows 10 64-bit, Mac OS 10, Windows 7 64-bit, Windows XP 32-bit, Ubuntu 14.04 64-bit (en-US locale),
 
 It requires nodejs and npm. If you don't have node, grab it at [nodejs.org](https://nodejs.org).
 Node installer bundles npm (node package manager)
