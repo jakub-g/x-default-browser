@@ -1,6 +1,6 @@
 {
   "name": "x-default-browser",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Detect default web browser of the current user, cross-platform (Win/Lin/Mac)",
   "author": "Jakub Gieryluk <jakub.g.opensource@gmail.com>",
   "license": "MIT",
